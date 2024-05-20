@@ -5,7 +5,7 @@ export const AddTrain = async (req, res) => {
   try {
     const { name, departureTime, arrivalTime, seats, availableSeats } = req.body;
 
-    const newTrain = new Train({ name, departureTime, arrivalTime, seats, availableSeats: seats });
+    const newTrain = new Train({ name, departureTime, arrivalTime, seats, availableSeatss: seats });
 
     const savedTrain = await newTrain.save();
 
